@@ -95,3 +95,8 @@ Take Back Meds Page:
 About Page:  
 ![](https://github.com/SnehaMishra28/Hackathon_Fall2018/blob/master/Documents/WebScreenshots/aboutPage.png)
 
+
+## References:  
+1. https://dev.socrata.com/foundry/data.medicaid.gov/rk4x-vkz6
+1. https://data.medicaid.gov/State-Drug-Utilization/Drug-Utilization-2018-Wyoming/vavg-yhx4
+1. https://github.com/SaiMohith/Hack-A-Roo-2018-Spring
