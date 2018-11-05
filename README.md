@@ -45,23 +45,5 @@ Application Demo
 https://youtu.be/l0xbGhh2i40
 
 
-## Screenshots:
-
-<img align="left" width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/login_a.png"> <img width="200" height="300" src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/reg_a.png">  <img width="200" height="300" src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/home1.png">
-
-
-<img align="left" width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/home2.png"> <img width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/home3.png">  <img width="200" height="300" src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/comm_groups.png">
-
-<img align="left" width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/addgroup.png"> <img width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/created.png"> <img width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/messages.png">
-
-<img align="left" width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/recommendationPage.png">
-
-<img align="left" width="200" height="300" 
-src="https://github.com/Ruthvicp/CommunityConnect_HackathonS18/blob/master/Documentation/firebaseDatabase.png">
+## Code for the Project:
+https://github.com/SnehaMishra28/Hackathon_Fall2018/tree/master/Source
