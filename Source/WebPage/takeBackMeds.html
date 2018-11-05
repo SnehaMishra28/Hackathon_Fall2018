@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Presco!">
+    <meta name="author" content="SnehaMishra">
+
+    <title>Presco!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css"/>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <!-- Custom styles-->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- This is the CSS for the 'Prescriber' and 'Reseacher' buttons, paragraph padding, and links-->
+    <style>
+        .p {
+            text-indent: 50px;
+            padding-top: 50px;
+            padding-right: 80px;
+            padding-bottom: 100px;
+            padding-left: 80px;
+        }
+        footer {
+            display: block;
+        }
+        .wrapper{
+            text-align: center;
+        }
+        img{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+        .article {
+            color: #00AEF5;
+            text-decoration-line: underline;}
+    </style>
+    <!-- End of additional CSS -->
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Prescription Analysis!!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" style="float: right;">
+            <ul class="nav navbar-nav" >
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="analysis.html">Analysis</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li class="active"><a href="takeBackMeds.html">TakeAway Meds</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div><!--/.nav-collapse-->
+    </div>
+</nav>
+
+<!-- Beginning of Webpage Content-->
+<!-- Title of page -->
+<h1>Presco!</h1>
+<div class="row">
+    <div class="col-md-4 col-md-offset-2">
+        <!--Opioid Picture-->
+        <div>
+            <img src="Images/takeBackMeds.png" alt="Take Back Meds Camp Image" height="400" width="1020" align="center"/>
+            <p style="padding-left: 6px;">
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+
+    <div class="col-md-40">
+
+        <!--Paragraph with context-->
+        <h3 style="margin: 40px">A brief overview!</h3>
+        <p style="margin: 40px">
+
+            Prescription Drug Take Back programs are designed to remove unused, unneeded,
+or expired medications from the home and dispose of them safely in order to
+prevent poisonings, prevent prescription drug abuse, and protect the environment.
+Drug take back events collect medications from individuals and households and
+excludes pharmacies, long-term care facilities, or other healthcare providers..
+
+        </p>
+        <h3 style="margin: 40px">Share your story/ Experience using Social Media!</h3>
+        
+        <div class="row">
+          <div class="column">
+              <a href="#" style="padding-left: 2px;"><li class="selected-data" onclick="blank();" id="analysis">Click below to use your Facebook account</li></a>
+            <img src="Images/fbIcon.png" alt="fb" style="width:20%">
+          </div>
+          <div class="column">
+              <a href="#" style="padding-left: 2px;"><li class="selected-data" onclick="blank();" id="analysis">Click below to use your Instagram account</li></a>
+            <img src="Images/instaIcon.png" alt="insta" style="width:20%">
+          </div>
+          <div class="column">
+              <a href="#" style="padding-left: 2px;"><li class="selected-data" onclick="blank();" id="analysis">Click below to use your Twitter account</li></a>
+            <img src="Images/twitterIcon.png" alt="twitter" style="width:20%">
+          </div>
+        </div>
+        
+        <h3 style="margin: 40px">Contact us!</h3>
+        <p style="margin: 40px">
+
+            You can reach us for further information or suggestions at - presco@gmail.com
+
+        </p>
+        <h3 style="margin: 40px">Refer us!</h3>
+        <p style="margin: 40px">
+
+            Kindly help us spread the word, refer us to your family and friends.
+
+        </p>
+
+        <!-- This is the header for the button selection -->
+
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Presco! Visualization">
+    <meta name="author" content="Presco!">
+
+    <title>Predictive Analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css"/>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <!-- Custom styles-->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <script type="text/javascript" src="jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+
+
+    <!-- This is the CSS for the 'Prescriber' and 'Reseacher' buttons, paragraph padding, and links-->
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid gold;
+            color: white;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .p {
+            text-indent: 50px;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            font-size: 24;
+        }
+        .wrapper{
+            text-align: center;
+        }
+        img{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            padding-right: 40px;
+            margin: 0 auto;
+        }
+        .article {
+            color: #00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:visited {
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:active{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:focus{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article.hover{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        #toolslist{
+            color: goldenrod;
+            type: "1";
+        }
+        .col-md-3{
+            text-align: center;
+        }
+        #chart {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #chart:hover {opacity: 0.7;}
+        .my-img a {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #CCC;
+        }
+        .my-img a:hover {
+            border: 2px solid #45AFFF;
+        }
+        .modal-lg {
+            width: 86%;
+        }
+        .modal-body {
+            overflow: auto;
+            max-height: auto;
+        }
+        a.fancybox img {
+            border: none;
+            box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+            -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+        }
+        a.fancybox:hover img {
+            position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+        }
+    </style>
+    <!-- End of additional CSS -->
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Presco!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" style="float: right;">
+            <ul class="nav navbar-nav" >
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="analysis.html">Analysis</a></li>
+                <li class="active"><a href="prediction.html">Prediction</a></li>
+                <li><a href="takeBackMeds.html">TakeAway Meds</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div><!--/.nav-collapse-->
+    </div>
+</nav>
+
+<!-- Beginning of Webpage Content-->
+
+<!-- Make sure to seperate both sections using bootstrap and seperate each section using row 6 column 6 (Make sure that row + column = 12) Check the bootstrap documentation  -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <!-- Title of page -->
+
+        <h1>Prescription drug claims analysis</h1>
+
+        <p>Using the datasets, we tried to predict the diseases and the popular (most used) drug in particular region for the next year.</p>
+
+            <div>
+
+            <h2>Statistical Data for Prediction (Summary): </h2>
+
+            <h3 style="color: white">Summary:</h3>
+                <p> Based on the analysis of the previous years claims, we can predict that the consumption of products related to asthma is high in demand for the year 2019.</p>
+                <br><br>
+                <img style="float: inside" src="graphs/graph_symptomsBilled.png">
+                <br><br>
+                <h3 style="color: white">Statistics:</h3>
+                <br>
+                <p> Popularity of the product in states based on their previous claims </p>
+                <br><br>
+                <img style="float: inside" src="graphs/graph_productPopularity.png">
+                <br><br>
+                <br><br>
+                
+                <p> Diseases in particular zip code based on their previous claims </p>
+                <br><br>
+                <img style="float: inside" src="graphs/graph_zipCodeDisease.png">
+            <br><br>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Load d3.js and c3.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+
+<script type="text/javascript">
+    /*$(document).ready(function() {
+        $('img').on('click', function() {
+            $("#showImg").empty();
+            var image = $(this).attr("src");
+            $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+        })
+    });*/
+    $(function($){
+        var addToAll = true;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+
+</body>
+</html>

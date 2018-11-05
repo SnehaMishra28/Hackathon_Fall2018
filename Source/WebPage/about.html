@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="An Opioid Data Visualization">
+    <meta name="author" content="Presco!">
+
+    <title>About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Load c3.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css"/>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <!-- Custom styles-->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- This is the CSS for the 'Prescriber' and 'Reseacher' buttons, paragraph padding, and links-->
+    <style>
+        .p {
+            text-indent: 50px;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            font-size: 24;
+        }
+        .wrapper{
+            text-align: center;
+        }
+        img{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            padding-right: 40px;
+            margin: 0 auto;
+        }
+        .article {
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:visited {
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:active{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article:focus{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        .article.hover{
+            color:#00AEF5;
+            text-decoration-line: underline;
+        }
+        #toolslist{
+            color: goldenrod;
+            type: "1";
+        }
+        .col-md-3{
+            text-align: center;
+        }
+    </style>
+    <!-- End of additional CSS -->
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Presco!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" style="float: right;">
+            <ul class="nav navbar-nav" >
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="analysis.html">Analysis</a></li>
+                <li><a href="prediction.html">Prediction</a></li>
+                <li><a href="takeBackMeds.html">TakeAway Meds</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+            </ul>
+        </div><!--/.nav-collapse-->
+    </div>
+</nav>
+
+<!-- Beginning of Webpage Content-->
+
+<!-- Make sure to seperate both sections using bootstrap and seperate each section using row 6 column 6 (Make sure that row + column = 12) Check the bootstrap documentation  -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <!-- Title of page -->
+
+        <h2>Prescription drug claims analysis</h2>
+
+        <p>This Usecase is to understand and predict prescription drug usage of medic-aid population, which will enable the local government and health plans to reduce spend. Combine datasets for analysis. Analyse and visualize interesting patterns in the data. </p>
+
+        <ol id="toolslist" type="1">
+            <li>Pre-Processing: Microsoft Excel</li>
+            <li>Scripting Language: Shell Script, Curl</li>
+            <li>Visualization: Tableau Desktop</li>
+            <li>Data Categorzation: Java Program</li>
+            <li>Web Page: HTML 5.0, Javascript, CSS</li>
+        </ol>
+
+        <h3>
+            Where the Data is Collected From
+        </h3>
+
+        <p>
+            Data for all the information visualizations used for the Analytics page is collected from the Datasets provided. The links for the same is provided below: <br>
+        </p>
+
+        <p>
+
+        </p>
+
+        <h4>
+            Links to view our Datasets:
+        </h4>
+        <div class="row">
+
+                <p>1. Medicaid Claims Datasets: <br>https://www.medicaid.gov/medicaid/prescription-drugs/state-drug-utilization-data/index.html
+                <br><br>
+                2. Zip Code Information: <br>
+                    https://www.census.gov/geo/maps-data/data/zcta_rel_download.html
+                <br><br>
+                3. Disease Mapping with Drug: <br>https://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_tableaccess.asp
+                <br><br>
+                4. Prescriber (Doctor) Information: <br>http://download.cms.gov/nppes/NPI_Files.html
+
+        </div>
+        <p>
+
+        </p>
+        
+        <h3>
+            You can reach us at: presco@gmail.com
+        </h3>
+
+        <p>
+            Owners - Sneha Mishra, Harshini, Latha 
+        </p>
+        <p>
+
+        </p>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Load d3.js and c3.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</body>
+</html>
