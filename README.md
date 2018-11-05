@@ -44,7 +44,7 @@ Architecture for the the Automation, including fetching the datasets automatical
 Application Demo can be found [here](https://youtu.be/PQ4Msl0hc3U)
 
 ## PPT:   
-PPT for the project, explaining the features and architecture can be found here
+PPT for the project, explaining the features and architecture can be found [here](https://github.com/SnehaMishra28/Hackathon_Fall2018/blob/master/Documents/Hackathon_F2018_Presco.pptx)
 
 
 ## Code for the Project:  
